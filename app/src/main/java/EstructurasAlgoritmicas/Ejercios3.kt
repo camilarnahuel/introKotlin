@@ -11,4 +11,15 @@ fun main(){
     }else{
         println("El número $x1 no esta dentro del rango")
     }
+
+
+    var result:Int=(0..50).random()
+    println("$result")
+    when(result){
+        0-> println("No hay")
+        in 1..6->println("entre 1 a 2")
+        else ->println("fuera de rango")
+    }
+
+
 }

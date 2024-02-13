@@ -7,36 +7,28 @@ class Reto3 {
 }
 
 fun calculadora () {
-    println("Ingrese su primer número (diferente a cero)\n")
+    println("Ingrese su primer número (diferente a cero)")
     var x1:Double = readLine()!!.toDouble()
-    println("Ingrese su segundo número (diferente a cero)\n")
 
+    println("Ingrese su segundo número (diferente a cero)")
     var x2:Double = readLine()!!.toDouble()
 
-    var s:Double= x1+x2
-    var r:Double= x1-x2
-    val m:Double= x1*x2
-    val d:Double= x1/x2
-    val ra1:Double= sqrt(x1)
-    val ra2:Double= sqrt(x2)
-    val p:Double= x1.pow(x2)
+    println("¿Qué operación desea? \n(Ingrese el número correspondiente: Suma(1), Resta(2), Multiplicacion(3), Division(4),Potencia(5),Raiz cuadrada(6)")
+    var op:Int = readLine()!!.toInt()
 
-    println("¿Qué operación desea? \n (Suma, Resta, Multiplicacion, Division,Potencia,Raiz)")
-    var op:String = readLine()!!.toString()
+    when(op){
+        1 -> println("La suma de $x1 con $x2 es ${x1+x2}")
+        2 -> println("La resta de $x1 con $x2 es ${x1-x2}")
+        3 -> println("La multiplicación de $x1 con $x2 es ${x1*x2}")
+        4 -> println("La división de $x1 por  $x2 es ${x1/x2}")
+        5 -> println("La potencia de $x1 por $x2 es ${x1.pow(x2)}")
+        6 -> println("La raiz cuadrada de $x1 es ${sqrt(x1)} y la de $x2 es ${sqrt(x2)}")
+        else -> println("La operación esta fuera de rango")
 
-    if (op == "Suma"){
-        println("La suma de $x1 con $x2 es $s")
-    }else if (op=="Resta"){
-        println("La resta de $x1 con $x2 es $r")
-    }else if(op=="Multiplicacion"){
-        println("La multiplicación de $x1 con $x2 es $m")
-    }else if(op == "Division"){
-        println("La división de $x1 por  $x2 es $d")
-    }else if(op == "Potencia"){
-        println("La potencia de $x1 por $x2 es $p")
-    }else if(op == "Raiz"){
-        println("La raiz cuadrada de $x1 es $ra1 y la de $x2 es $ra2")
     }
+
+
+
 }
 
 fun main(){
