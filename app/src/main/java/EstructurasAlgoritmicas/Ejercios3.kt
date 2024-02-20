@@ -1,4 +1,4 @@
-package Quiz
+package EstructurasAlgoritmicas
 
 class Ejercios3 {
 }

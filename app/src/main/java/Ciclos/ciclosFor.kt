@@ -1,7 +1,6 @@
-package EstructurasAlgoritmicas
+package Ciclos
 
 import kotlin.math.pow
-import kotlin.math.sqrt
 
 class Ciclos {
 

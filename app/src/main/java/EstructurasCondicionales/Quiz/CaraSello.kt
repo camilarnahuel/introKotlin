@@ -1,4 +1,4 @@
-package Quiz
+package EstructurasCondicionales.Quiz
 
 class CaraSello {
 }
