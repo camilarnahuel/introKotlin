@@ -1,11 +1,9 @@
-package com.example.app1
+package Quiz
 
 class CaraSello {
 }
 
 fun main(){
-
-
     println("¿Cuantas veces quieres jugar? (diferente a cero)")
     var n:Int = readLine()!!.toInt()
 
@@ -26,6 +24,4 @@ fun main(){
         }
 
     }
-
-
 }
