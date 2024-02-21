@@ -1,19 +1,13 @@
 package Ciclos
 
-class piedraPapelTijera {
+class piedraPapelTijeraWhile {
 }
-
-/*❑ Desarrolle un programa en kotlin que le permita generar la simulación
-del juego piedra, papel o tijera (juego contra la máquina)
-❑ Determine y muestre en pantalla el resultado del juego, si gana
-alguien o hay empate.
-*/
 
 fun main(){
     println("Cuantas veces quieres jugar?")
     var lives: Int = readLine()!!.toInt()
 
-    for(n in 1..lives){
+    while(lives>0){
         println("Ingrese Piedra, Papel o Tijera")
         var apuesta:String = readLine()!!.toString().lowercase()
         var result:Int=(0..2).random()
